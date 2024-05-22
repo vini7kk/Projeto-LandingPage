@@ -1,0 +1,125 @@
+                                                                           /* paleta de cores usada */
+.cor1 { color: #BF60B9; }   
+.cor2 { color: #8332A6; }
+.cor3 { color: #59268C; }
+.cor-btn { color: #1C204D; }
+.cor-background { color: #02060e; }
+
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #02060e;
+    color: white;
+    font-family: poppins;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+                                                                                 /*Cabeçalho*/
+
+
+.logo h1{
+    font-weight: lighter;
+    text-wrap:balance ;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+li{
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+    color: #FFF;
+    font-weight: 600;
+}
+.menu-itens:hover{
+    transition: transform 0.3s ease;
+    color: #242a69;
+    transform: scale(1.1)
+}
+
+.login-btn {
+    border: 2px solid rgb(28, 32, 77);
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.login-btn:hover {
+    background-color: rgb(28, 32, 77);
+    color: white;
+    transform: scale(1.1);
+}
+
+
+                                                                                  /*conteúdo*/
+
+
+.primeira-parte{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 1rem;
+}
+
+.text {
+   padding-top: 9rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2.2rem;
+}                                                
+
+strong {
+    color: #7e2ad3;
+    font-size: 110%;
+}
+
+.hover-word {
+    display: inline-block;
+    padding: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+}
+.hover-word:hover {
+    transform: scale(1.1);       
+}
+.text.hovering .hover-word:not(:hover) {
+    opacity: 0.5; 
+}
+
+
+img {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+img:hover {
+    transform: scale(1.05);
+}
+
+
+
+                                                                        /*Media Query para dispositivos menores*/
+
+
+ @media  (max-width: 768px) {
+header {
+    flex-direction: row;
+    font-size: 60%;
+    height: auto; 
+    width:100%;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+}
