@@ -125,7 +125,7 @@ img:hover {
 
                                                                         /*Media Query para dispositivos menores*/
 
- @media  (max-width: 1024px){
+ @media  (max-width: 1280px){
 body {
     background-color: #02060e;
     color: white;
